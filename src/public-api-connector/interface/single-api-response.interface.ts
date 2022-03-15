@@ -1,9 +1,9 @@
 export interface SingleAPIResponse {
-  api: string;
-  description: string;
-  auth: string;
-  https: boolean;
-  cors: string;
-  link: string;
-  category: string;
+  API: string;
+  Description: string;
+  Auth: string;
+  HTTPS: boolean;
+  Cors: string;
+  Link: string;
+  Category: string;
 }
