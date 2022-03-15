@@ -25,6 +25,7 @@ export class PublicApiConnectorService {
 
   async updateApis(): Promise<void> {
     try {
+      this.logger.info('Starting API list update');
       const apis = await this.getApisFromService();
       await this.publicApiModel.bulkWrite(bulkWriteMapper(apis));
       this.logger.info('API list updated');
